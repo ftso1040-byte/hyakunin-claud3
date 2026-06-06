@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>林屋克三郎とは | 百人の顔 発案者プロフィール</title>
+  <meta name="description" content="「百人の顔」発案者・林屋克三郎のプロフィール。1943年生（83歳）。慶應義塾大学法学部卒、三菱銀行出身。川端康成・井上靖・司馬遼太郎・堤清二ら各界の巨人に師事。TEL 03-3569-6700（担当：塩澤）。">
+  <link rel="canonical" href="https://hyakuninnokao026.oops.jp/hundred-face/hayashiya.html">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="林屋克三郎とは | 百人の顔 発案者プロフィール">
+  <meta property="og:description" content="「百人の顔」発案者・林屋克三郎。1943年生（83歳）。慶應大法学部卒、三菱銀行出身。川端康成・司馬遼太郎ら文豪に師事。">
+  <meta property="og:url"         content="https://hyakuninnokao026.oops.jp/hundred-face/hayashiya.html">
+  <meta property="og:image"       content="ogp.jpg">
+  <meta property="og:locale"      content="ja_JP">
+  <meta property="og:site_name"   content="百人の顔">
+  <meta name="twitter:card"       content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---- PROFILE BLOCK ---- */
+    .profile-block {
+      display: grid; grid-template-columns: 240px 1fr; gap: 52px; align-items: start;
+      margin-top: 48px;
+    }
+    .profile-photo {
+      width: 100%; aspect-ratio: 3/4;
+      background: linear-gradient(145deg, var(--ink-mid), var(--ink));
+      border-radius: 8px; border: 2px solid var(--gold);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.35); font-size: 13px; text-align: center; line-height: 1.8;
+      position: sticky; top: calc(var(--header-h) + 20px);
+    }
+    .profile-name {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 32px; color: var(--ink); letter-spacing: 0.1em; margin-bottom: 4px;
+    }
+    @media (prefers-color-scheme: dark) { .profile-name { color: var(--gold-lt); } }
+    .profile-title { font-size: 13px; color: var(--text-sub); letter-spacing: 0.06em; margin-bottom: 24px; }
+
+    /* ---- CAREER LIST ---- */
+    .career-list { list-style: none; }
+    .career-list li {
+      display: flex; gap: 20px; padding: 13px 0;
+      border-bottom: 1px solid var(--border); font-size: 15px; line-height: 1.8;
+    }
+    .career-list li:last-child { border-bottom: none; }
+    .career-year { font-weight: 700; color: var(--gold); white-space: nowrap; min-width: 52px; flex-shrink: 0; padding-top: 2px; }
+
+    /* ---- RESPECT ---- */
+    .respect-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+    .respect-chip {
+      background: var(--paper-mid); border: 1px solid var(--border); border-radius: 4px;
+      padding: 7px 18px;
+      font-family: 'Shippori Mincho', serif; font-size: 15px; color: var(--ink); letter-spacing: 0.06em;
+    }
+    @media (prefers-color-scheme: dark) { .respect-chip { color: var(--text); background: var(--paper-mid); } }
+
+    /* ---- MENTOR GRID ---- */
+    .mentor-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px; margin-top: 36px;
+    }
+    .mentor-card {
+      background: var(--white); border: 1px solid var(--border);
+      border-left: 4px solid var(--gold);
+      border-radius: 0 var(--r) var(--r) 0;
+      padding: 18px 20px;
+      transition: transform var(--t), box-shadow var(--t);
+    }
+    .mentor-card:hover { transform: translateY(-2px); box-shadow: var(--shadow); }
+    .mentor-field {
+      display: inline-block; font-size: 10px; font-weight: 700; letter-spacing: 0.12em;
+      color: var(--gold); background: var(--gold-pale); border: 1px solid rgba(184,144,28,0.2);
+      padding: 2px 8px; border-radius: 2px; margin-bottom: 8px;
+    }
+    .mentor-name {
+      font-family: 'Shippori Mincho', serif; font-size: 18px;
+      color: var(--ink); margin-bottom: 6px; letter-spacing: 0.05em;
+    }
+    @media (prefers-color-scheme: dark) { .mentor-name { color: var(--gold-lt); } }
+    .mentor-desc { font-size: 12px; color: var(--text-sub); line-height: 1.8; }
+
+    /* ---- THOUGHT ---- */
+    .thought-wrap {
+      max-width: 740px; margin: 0 auto;
+      padding: 52px 48px; border-radius: 12px;
+      border: 1px solid rgba(184,144,28,0.22);
+      background: rgba(255,255,255,0.022);
+    }
+    .thought-wrap p {
+      font-family: 'Noto Serif JP', serif;
+      font-size: clamp(14px, 2vw, 17px); color: #c0d8f0;
+      line-height: 2.4; letter-spacing: 0.04em; margin-bottom: 24px;
+    }
+    .thought-wrap p:last-of-type { margin-bottom: 0; }
+    .thought-sign {
+      text-align: right; margin-top: 36px; padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      font-family: 'Shippori Mincho', serif;
+      font-size: 16px; color: var(--gold-lt); letter-spacing: 0.12em;
+    }
+
+    @media (max-width: 680px) {
+      .profile-block { grid-template-columns: 1fr; gap: 24px; }
+      .profile-photo { position: static; aspect-ratio: 16/9; }
+      .thought-wrap { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">百人の顔<small>100 Faces of Japan</small></a>
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="hayashiya.html" class="active">林屋克三郎</a>
+        <a href="project.html">企画概要</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+      <a href="tel:0335696700" class="header-tel" aria-label="電話番号 03-3569-6700">
+        <small>TEL</small>03-3569-6700
+      </a>
+      <button class="hamburger" aria-label="メニューを開く" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルナビゲーション">
+    <a href="index.html">トップ</a>
+    <a href="hayashiya.html">林屋克三郎について</a>
+    <a href="project.html">企画概要・仕様</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="tel:0335696700" style="color:var(--gold-lt);font-weight:700;">&#128222; 03-3569-6700（担当：塩澤）</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Organizer</span>
+      <h1>林屋 克三郎</h1>
+      <p class="lead">「百人の顔」発案者プロフィール</p>
+    </div>
+  </section>
+
+  <!-- 略歴 -->
+  <section class="bg-paper">
+    <div class="wrap fi">
+      <span class="eyebrow">Profile</span>
+      <h2>略歴</h2>
+      <div class="divider"></div>
+      <div class="profile-block">
+        <div class="profile-photo" role="img" aria-label="百人の顔 発案者 林屋克三郎のプロフィール写真">
+          林屋 克三郎<br>プロフィール写真
+        </div>
+        <div>
+          <p class="profile-name">林屋 克三郎</p>
+          <p class="profile-title">「百人の顔」発案者 ／ NPO法人先端医療をささえる会</p>
+          <ul class="career-list">
+            <li><span class="career-year">1943年</span>5月23日生まれ（83歳）</li>
+            <li><span class="career-year">学歴</span>麻布中学校・高等学校卒業<br>慶應義塾大学法学部法律学科卒業</li>
+            <li><span class="career-year">職歴</span>三菱銀行入行</li>
+            <li><span class="career-year">&nbsp;</span>衆議院議員秘書を経て独立</li>
+            <li><span class="career-year">&nbsp;</span>「林屋経営研究所」設立<br>倒産危機企業の救済・大手企業コンサルティング・イベント企画に多数従事</li>
+            <li><span class="career-year">現在</span>NPO法人先端医療をささえる会にて「百人の顔」プロジェクトを主導</li>
+          </ul>
+          <h3 style="margin-top:28px;">尊敬する人物</h3>
+          <div class="respect-row">
+            <span class="respect-chip">東郷 平八郎</span>
+            <span class="respect-chip">秋山 真之</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 師事した人物 -->
+  <section class="bg-white">
+    <div class="wrap fi">
+      <span class="eyebrow">Mentors</span>
+      <h2>師事した人物</h2>
+      <div class="divider"></div>
+      <p class="lead">各界の巨人たちとの親交が、「百人の顔」の企画思想を育みました。</p>
+      <div class="mentor-grid">
+        <div class="mentor-card fi fi-d1">
+          <span class="mentor-field">文学</span>
+          <p class="mentor-name">川端 康成</p>
+          <p class="mentor-desc">ノーベル文学賞受賞作家。日本美の極致を追求した文豪。「伊豆の踊子」「雪国」で世界に名を轟かせた。</p>
+        </div>
+        <div class="mentor-card fi fi-d1">
+          <span class="mentor-field">文学</span>
+          <p class="mentor-name">井上 靖</p>
+          <p class="mentor-desc">芥川賞・直木賞受賞。「天平の甍」「敦煌」など歴史・西域小説で昭和文壇を牽引した作家。</p>
+        </div>
+        <div class="mentor-card fi fi-d2">
+          <span class="mentor-field">文学</span>
+          <p class="mentor-name">司馬 遼太郎</p>
+          <p class="mentor-desc">「竜馬がゆく」「坂の上の雲」など、日本人の精神風土を描き続けた国民作家。</p>
+        </div>
+        <div class="mentor-card fi fi-d2">
+          <span class="mentor-field">経済・実業</span>
+          <p class="mentor-name">堤 清二</p>
+          <p class="mentor-desc">セゾングループを率いた実業家・詩人。「辻井喬」としても活躍した流通革命のカリスマ。</p>
+        </div>
+        <div class="mentor-card fi fi-d3">
+          <span class="mentor-field">政治</span>
+          <p class="mentor-name">園田 直</p>
+          <p class="mentor-desc">元衆議院議員・外務大臣。日中国交正常化に尽力した昭和の政治家。</p>
+        </div>
+        <div class="mentor-card fi fi-d3">
+          <span class="mentor-field">その他</span>
+          <p class="mentor-name">脇 正 ／ 河村 卓也</p>
+          <p class="mentor-desc">師として薫陶を受けた人物。実践的な経営観と人間哲学を林屋に伝えた先達。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企画への想い -->
+  <section class="bg-ink">
+    <div class="wrap fi">
+      <span class="eyebrow">Philosophy</span>
+      <h2>企画への想い</h2>
+      <div class="divider"></div>
+      <div class="thought-wrap">
+        <p>
+          かつて日本は「ものづくり大国」として世界に誇れる経済力と精神力を持っていました。
+          しかし戦後の教育改革の中で、日本人としての根っこが少しずつ失われてきたように感じています。
+        </p>
+        <p>
+          経営者の方々は、時代の荒波の中で自分の判断軸を持ち、失敗を乗り越えてきた方々です。
+          その経験と哲学は、教科書には載らない、本物の「生き方の知恵」です。
+          次世代の子供たちに、この言葉を届けたい——それがこのプロジェクトの原点です。
+        </p>
+        <p>
+          この「百人の顔」は、広告ではありません。
+          私が直接お会いし、「この方の言葉を次世代に届けたい」と思った経営者だけにお声がけする、記録事業です。
+          100人の人生が一冊に集まるとき、それは単なる冊子ではなく、日本の底力を示す「社会的資産」になると信じています。
+        </p>
+        <p class="thought-sign">林屋 克三郎</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-paper">
+    <div class="wrap fi" style="text-align:center;">
+      <h2>林屋克三郎について詳しくお話しします</h2>
+      <p class="lead" style="margin:12px auto 36px;">ご質問・ご参加のご相談は、担当の塩澤が丁寧にご案内いたします。</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:0335696700" class="btn btn-tel" style="font-size:clamp(20px,3.5vw,28px);padding:18px 40px;">&#128222; 03-3569-6700</a>
+        <a href="contact.html" class="btn btn-outline-dark">お問い合わせページへ</a>
+      </div>
+      <p style="margin-top:16px;font-size:13px;color:var(--text-sub);">担当：塩澤　／　受付時間：平日 10:00〜18:00</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-logo">百人の顔</p>
+        <p class="footer-tagline">未来へ贈るメッセージ<br>100の人生・100の哲学<br>NPO法人先端医療をささえる会</p>
+      </div>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="index.html">トップページ</a>
+        <a href="hayashiya.html">林屋克三郎について</a>
+        <a href="project.html">企画概要・仕様</a>
+        <a href="contact.html">お申し込み・お問い合わせ</a>
+      </nav>
+      <div class="footer-contact">
+        <p>
+          NPO法人先端医療をささえる会　担当：塩澤<br>
+          TEL: <a href="tel:0335696700">03-3569-6700</a>　（平日 10:00〜18:00）<br>
+          〒104-0061　東京都中央区銀座6丁目6-1　銀座風月堂ビル5F
+        </p>
+      </div>
+    </div>
+    <p class="footer-copy">&#169; NPO法人先端医療をささえる会　「百人の顔」プロジェクト</p>
+  </footer>
+
+  <div class="sticky-tel" aria-label="電話でのお問い合わせ">
+    <a href="tel:0335696700">&#128222; 03-3569-6700　担当：塩澤</a>
+    <p>タップで発信 ／ 平日 10:00〜18:00</p>
+  </div>
+
+  <script>
+    function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    var fi = new IntersectionObserver(function(e) {
+      e.forEach(function(x) { if (x.isIntersecting) { x.target.classList.add('on'); fi.unobserve(x.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fi').forEach(function(el) { fi.observe(el); });
+  </script>
+</body>
+</html>
