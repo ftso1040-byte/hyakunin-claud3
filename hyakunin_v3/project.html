@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>企画概要・冊子仕様 | 百人の顔</title>
+  <meta name="description" content="「百人の顔」の企画概要と冊子仕様。A4判オールカラー・100名掲載・1名2ページ・定価3,000円。ポートレート写真＋インタビュー約1,500字。小学生でも読める編集方針。TEL 03-3569-6700（担当：塩澤）。">
+  <link rel="canonical" href="https://hyakuninnokao026.oops.jp/hundred-face/project.html">
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="企画概要・冊子仕様 | 百人の顔">
+  <meta property="og:description" content="「百人の顔」企画概要。A4判オールカラー・100名掲載・定価3,000円。ポートレート写真＋インタビュー約1,500字。">
+  <meta property="og:url"         content="https://hyakuninnokao026.oops.jp/hundred-face/project.html">
+  <meta property="og:image"       content="ogp.jpg">
+  <meta property="og:locale"      content="ja_JP">
+  <meta property="og:site_name"   content="百人の顔">
+  <meta name="twitter:card"       content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Noto+Serif+JP:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---- 見開きサンプル ---- */
+    .spread-wrap { max-width: 580px; margin: 0 auto 48px; }
+    .spread {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 3px;
+      border: 2px solid var(--gold); border-radius: 8px; overflow: hidden;
+      box-shadow: 0 10px 40px rgba(12,24,40,0.18);
+    }
+    .spread-l {
+      aspect-ratio: 3/4; padding: 20px;
+      background: linear-gradient(145deg, #14305a, #0a1828);
+      display: flex; flex-direction: column; gap: 10px;
+    }
+    .spread-l .ph { flex: 1; background: rgba(255,255,255,0.10); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.3); font-size: 12px; }
+    .spread-l .cap { height: 26%; background: rgba(255,255,255,0.06); border-radius: 3px; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.25); font-size: 11px; }
+    .spread-r {
+      aspect-ratio: 3/4; padding: 20px;
+      background: var(--paper-mid);
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .spread-r .sh { height: 16%; background: var(--border); border-radius: 3px; }
+    .spread-r .body { flex: 1; display: flex; flex-direction: column; gap: 5px; padding-top: 4px; }
+    .spread-r .ln  { height: 8px; background: var(--border); border-radius: 2px; }
+    .spread-r .ln.s { width: 70%; }
+    .spread-caption { text-align: center; font-size: 12px; color: var(--text-sub); margin-top: 12px; }
+
+    /* ---- 掲載内容リスト ---- */
+    .content-list { list-style: none; margin-top: 24px; }
+    .content-list li {
+      display: flex; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--border);
+    }
+    .content-list li:last-child { border-bottom: none; }
+    .ci { color: var(--gold); font-size: 14px; flex-shrink: 0; padding-top: 3px; }
+    .content-list strong { font-size: 15px; display: block; margin-bottom: 2px; }
+    .content-list small  { font-size: 13px; color: var(--text-sub); line-height: 1.8; }
+
+    /* ---- 編集方針 ---- */
+    .policy-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px; margin-top: 32px;
+    }
+    .policy-item {
+      background: var(--white); border-left: 4px solid var(--gold);
+      border-radius: 0 var(--r) var(--r) 0;
+      padding: 20px 22px;
+      box-shadow: 0 2px 12px rgba(12,24,40,0.06);
+    }
+    .policy-item h3 { font-size: 15px; margin-bottom: 6px; }
+    .policy-item p  { font-size: 13px; color: var(--text-sub); line-height: 1.8; }
+
+    /* ---- 価格 ---- */
+    .price-box {
+      max-width: 520px; margin: 0 auto;
+      background: var(--white); border: 2px solid var(--gold);
+      border-radius: 12px; padding: 48px 40px; text-align: center;
+      box-shadow: 0 8px 40px rgba(184,144,28,0.14);
+    }
+    .price-lbl { font-size: 13px; color: var(--text-sub); letter-spacing: 0.1em; margin-bottom: 10px; }
+    .price-num {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 58px; font-weight: 700; color: var(--ink); line-height: 1;
+    }
+    .price-num small { font-size: 22px; }
+    @media (prefers-color-scheme: dark) { .price-num { color: var(--gold-lt); } }
+    .price-note { font-size: 13px; color: var(--text-sub); margin: 16px 0 8px; line-height: 1.9; }
+    .price-tel  { font-size: 14px; color: var(--ink-mid); background: var(--paper); border-radius: 4px; padding: 10px 16px; margin: 14px 0 24px; }
+
+    @media (max-width: 500px) {
+      .price-box { padding: 32px 20px; }
+      .price-num { font-size: 46px; }
+      .spread-wrap { max-width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="header-logo">百人の顔<small>100 Faces of Japan</small></a>
+      <nav class="header-nav" aria-label="メインナビゲーション">
+        <a href="index.html">トップ</a>
+        <a href="hayashiya.html">林屋克三郎</a>
+        <a href="project.html" class="active">企画概要</a>
+        <a href="contact.html">お問い合わせ</a>
+      </nav>
+      <a href="tel:0335696700" class="header-tel" aria-label="電話番号 03-3569-6700">
+        <small>TEL</small>03-3569-6700
+      </a>
+      <button class="hamburger" aria-label="メニューを開く" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="モバイルナビゲーション">
+    <a href="index.html">トップ</a>
+    <a href="hayashiya.html">林屋克三郎について</a>
+    <a href="project.html">企画概要・仕様</a>
+    <a href="contact.html">お問い合わせ</a>
+    <a href="tel:0335696700" style="color:var(--gold-lt);font-weight:700;">&#128222; 03-3569-6700（担当：塩澤）</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <span class="eyebrow">Project</span>
+      <h1>企画概要・冊子仕様</h1>
+      <p class="lead">「百人の顔」とはどのような冊子か</p>
+    </div>
+  </section>
+
+  <!-- 企画の目的 -->
+  <section class="bg-white">
+    <div class="wrap fi">
+      <span class="eyebrow">Overview</span>
+      <h2>企画の目的</h2>
+      <div class="divider"></div>
+      <p class="lead" style="max-width:100%;margin-bottom:32px;">
+        日本の各界で活躍する100名の経営者に、幼年時代・人生の転機・困難・意思決定の軸・経営哲学などを語っていただき、A4判オールカラーの冊子として編纂します。
+      </p>
+      <div class="grid-3">
+        <div class="card card-left fi fi-d1">
+          <h3>社会的記録として残す</h3>
+          <p style="font-size:14px;color:var(--text-sub);line-height:1.9;">経営者の思想・価値観を書き残すことで、個人の歩みを「社会的資産」に昇華させます。</p>
+        </div>
+        <div class="card card-left fi fi-d2">
+          <h3>経営の本質を次世代に</h3>
+          <p style="font-size:14px;color:var(--text-sub);line-height:1.9;">経営の営みの本質を次世代に手渡すことが、日本の未来への最大の投資になると考えます。</p>
+        </div>
+        <div class="card card-left fi fi-d3">
+          <h3>広告ではない記録事業</h3>
+          <p style="font-size:14px;color:var(--text-sub);line-height:1.9;">このプロジェクトは広告ではありません。林屋克三郎が直接選んだ方のみが掲載対象です。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 冊子仕様 -->
+  <section class="bg-paper">
+    <div class="wrap fi">
+      <span class="eyebrow">Specification</span>
+      <h2>冊子仕様</h2>
+      <div class="divider"></div>
+
+      <div class="spread-wrap" role="img" aria-label="百人の顔 冊子見開きサンプル 経営者インタビュー掲載イメージ">
+        <div class="spread">
+          <div class="spread-l">
+            <div class="ph">ポートレート写真</div>
+            <div class="cap">お名前・会社名・役職</div>
+          </div>
+          <div class="spread-r">
+            <div class="sh"></div>
+            <div class="body">
+              <div class="ln"></div><div class="ln"></div><div class="ln s"></div>
+              <div class="ln"></div><div class="ln"></div><div class="ln"></div>
+              <div class="ln s"></div><div class="ln"></div><div class="ln"></div>
+            </div>
+          </div>
+        </div>
+        <p class="spread-caption">見開き2ページ構成のイメージ（左：写真 ／ 右：インタビュー原稿）</p>
+      </div>
+
+      <table class="spec-table">
+        <tbody>
+          <tr><th>想定読者</th><td>小学校5・6年生〜大人</td></tr>
+          <tr><th>掲載人数</th><td>100名</td></tr>
+          <tr><th>判型</th><td>A4判　オールカラー</td></tr>
+          <tr><th>1名あたりのスペース</th><td>見開き2ページ構成</td></tr>
+          <tr><th>掲載内容</th><td>ポートレート写真1点　＋　インタビュー原稿（約1,500字）</td></tr>
+          <tr><th>制作範囲</th><td>編集・ライティング・校正・アートディレクション・デザイン　すべて込み</td></tr>
+          <tr><th>定価</th><td>1冊　3,000円（税込）</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- インタビュー内容 -->
+  <section class="bg-white">
+    <div class="wrap fi">
+      <span class="eyebrow">Contents</span>
+      <h2>インタビューの主な内容</h2>
+      <div class="divider"></div>
+      <p class="lead">掲載される6つのテーマで、経営者の「人間」としての深みを引き出します。</p>
+      <ul class="content-list">
+        <li>
+          <span class="ci">&#9632;</span>
+          <div><strong>子どもの頃に大切にしていたこと</strong>
+          <small>原点にある価値観・家庭環境・幼少期の体験。経営者の人格が形成された土台を探ります。</small></div>
+        </li>
+        <li>
+          <span class="ci">&#9632;</span>
+          <div><strong>人生の転機と意思決定</strong>
+          <small>ターニングポイントとなった出来事・選択の軸。何があなたを今の道に導いたのか。</small></div>
+        </li>
+        <li>
+          <span class="ci">&#9632;</span>
+          <div><strong>失敗した経験とそのときの思考</strong>
+          <small>困難との向き合い方・立て直しのプロセス。失敗談こそが子供たちへの最大の贈り物。</small></div>
+        </li>
+        <li>
+          <span class="ci">&#9632;</span>
+          <div><strong>仕事で迷ったときの判断方法</strong>
+          <small>自分軸の作り方・ブレない信念の持ち方。正解のない問いにどう向き合うか。</small></div>
+        </li>
+        <li>
+          <span class="ci">&#9632;</span>
+          <div><strong>現在も大切にしている考え方</strong>
+          <small>今も実践している経営哲学・生き方の習慣。時代を超えて通じる普遍的な知恵。</small></div>
+        </li>
+        <li>
+          <span class="ci">&#9632;</span>
+          <div><strong>未来を生きる子どもたちへのメッセージ</strong>
+          <small>次世代へ贈る言葉・希望・受け継いでほしいこと。あなたにしか語れないメッセージを。</small></div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 編集方針 -->
+  <section class="bg-paper">
+    <div class="wrap fi">
+      <span class="eyebrow">Editorial Policy</span>
+      <h2>編集方針</h2>
+      <div class="divider"></div>
+      <p class="lead">どの経営者の言葉も、小学生が読んでわかる言葉に変換します。</p>
+      <div class="policy-grid">
+        <div class="policy-item fi fi-d1">
+          <h3>&#128218; 専門用語は使わない</h3>
+          <p>業界用語・経営用語は極力排除。小学5・6年生でも理解できる平易な言葉で書き起こします。</p>
+        </div>
+        <div class="policy-item fi fi-d2">
+          <h3>&#9997; 一文は短く・具体的に</h3>
+          <p>長い複合文は避け、一文を短く刻みます。抽象論より具体的なエピソードを優先します。</p>
+        </div>
+        <div class="policy-item fi fi-d3">
+          <h3>&#128247; 写真で人柄を伝える</h3>
+          <p>プロカメラマンによるポートレート撮影。言葉とビジュアルで経営者の人間性を表現します。</p>
+        </div>
+        <div class="policy-item fi fi-d4">
+          <h3>&#128196; ゲラ確認あり</h3>
+          <p>原稿は必ずご本人に校正をお願いします。ご確認いただいてから印刷に進みます。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 価格 -->
+  <section class="bg-white">
+    <div class="wrap fi" style="text-align:center;">
+      <span class="eyebrow">Price</span>
+      <h2>ご購入・頒価</h2>
+      <div class="divider" style="margin:0 auto 20px;"></div>
+      <p class="lead" style="margin:0 auto 40px;text-align:center;">
+        掲載誌は一般の方もご購入いただけます。<br>実物をご覧になってから、参加・協賛をご検討ください。
+      </p>
+      <div class="price-box">
+        <p class="price-lbl">掲載誌　定価</p>
+        <p class="price-num"><small>&#165;</small>3,000<small>（税込）</small></p>
+        <p class="price-note">A4判オールカラー・100名掲載・永久保存版<br>ご購入はお電話またはメールにてお申し込みください。</p>
+        <p class="price-tel">&#128222; TEL 03-3569-6700　担当：塩澤（平日 10:00〜18:00）</p>
+        <a href="tel:0335696700" class="btn btn-gold">今すぐ電話で申し込む</a>
+        <br>
+        <a href="contact.html" class="btn btn-outline-dark" style="margin-top:14px;">お問い合わせページへ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- メリット -->
+  <section class="bg-ink">
+    <div class="wrap fi">
+      <span class="eyebrow">Benefits</span>
+      <h2>掲載されることのメリット</h2>
+      <div class="divider"></div>
+      <div class="grid-3">
+        <div class="card card-dark fi fi-d1">
+          <h3>採用・ブランディング</h3>
+          <p>求人応募者・新入社員への説明資料として活用。経営者の人柄・哲学を伝え、理念共感型採用を実現します。</p>
+        </div>
+        <div class="card card-dark fi fi-d2">
+          <h3>取引先・講演での活用</h3>
+          <p>名刺代わりの一冊として取引先への挨拶に使用。講演・セミナーの登壇紹介資料として重みが増します。</p>
+        </div>
+        <div class="card card-dark fi fi-d3">
+          <h3>社会貢献・次世代教育</h3>
+          <p>小学5・6年生から読める内容で、次世代の教育資材として社会に残ります。出身校への寄贈も歓迎します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-paper">
+    <div class="wrap fi" style="text-align:center;">
+      <h2>ご参加・ご購入のご相談</h2>
+      <p class="lead" style="margin:12px auto 36px;">詳細はお電話またはメールにてお気軽にお問い合わせください。</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:0335696700" class="btn btn-tel" style="font-size:clamp(20px,3.5vw,28px);padding:18px 40px;">&#128222; 03-3569-6700</a>
+        <a href="contact.html" class="btn btn-outline-dark">お問い合わせページへ</a>
+      </div>
+      <p style="margin-top:16px;font-size:13px;color:var(--text-sub);">担当：塩澤　／　受付時間：平日 10:00〜18:00</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <p class="footer-logo">百人の顔</p>
+        <p class="footer-tagline">未来へ贈るメッセージ<br>100の人生・100の哲学<br>NPO法人先端医療をささえる会</p>
+      </div>
+      <nav class="footer-nav" aria-label="フッターナビゲーション">
+        <a href="index.html">トップページ</a>
+        <a href="hayashiya.html">林屋克三郎について</a>
+        <a href="project.html">企画概要・仕様</a>
+        <a href="contact.html">お申し込み・お問い合わせ</a>
+      </nav>
+      <div class="footer-contact">
+        <p>
+          NPO法人先端医療をささえる会　担当：塩澤<br>
+          TEL: <a href="tel:0335696700">03-3569-6700</a>　（平日 10:00〜18:00）<br>
+          〒104-0061　東京都中央区銀座6丁目6-1　銀座風月堂ビル5F
+        </p>
+      </div>
+    </div>
+    <p class="footer-copy">&#169; NPO法人先端医療をささえる会　「百人の顔」プロジェクト</p>
+  </footer>
+
+  <div class="sticky-tel" aria-label="電話でのお問い合わせ">
+    <a href="tel:0335696700">&#128222; 03-3569-6700　担当：塩澤</a>
+    <p>タップで発信 ／ 平日 10:00〜18:00</p>
+  </div>
+
+  <script>
+    function toggleMenu() { document.getElementById('mobileMenu').classList.toggle('open'); }
+    var fi = new IntersectionObserver(function(e) {
+      e.forEach(function(x) { if (x.isIntersecting) { x.target.classList.add('on'); fi.unobserve(x.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.fi').forEach(function(el) { fi.observe(el); });
+  </script>
+</body>
+</html>
